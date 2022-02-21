@@ -3,225 +3,116 @@
     padding: 0;
 }
 ul {
-    list-style-type: none;
+    list-style-type:none;
 }
 a {
-    text-decoration: none;
+    text-decoration:none;
 }
-body {
-    /* background-color: #f5f5f5 !important; */
-    background:url(../img/动态流星背景图.gif) no-repeat fixed;
-    background-size: cover;
-    height: 1280px;
-}
-/* 防止出错 */
-.row {
-    display: flex;
+
+@media screen and (min-width:1980px) {
+
+    .container {
+        width: 100%;
+    }
     
 }
-/* header-top */
-.header-top {
-    background-color: rgb(83, 83, 83);
-    opacity: 0.9;
-    width: 100%;
-    height: 30px;
-    /* 防止top布出错 */
-    display: flex;
-    /* margin: auto; */
-    position: sticky;
-}
-#zan {
-    color: red;
-    float: left;
-}
-#zan:hover {
-    background-color: #fff;
-    color: #fff;
-}
-.header-top-left-name {
-    color: #fff;
-    padding-left: 85px;
-    padding-top: 0px;
+/* top - header -Nav -----start*/
+.nav {
     display: block;
-    justify-content: center;
-    font-size: 25px;
-    opacity: 1;
-    box-shadow: 80px 80px 100px 10PX #ccc;
-    color: red;
-    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    position: relative;
 }
-/* 左边导航栏 */
-.nav-left {
-    width: 300px;
-    height: 1500px;
-    background-color: rgb(83, 83, 83);
-    opacity: 0.8;
-
+.nav ul {
+    position: absolute;
+    right: 00px;
+    background-color: rgb(114, 108, 108);
+    width: 100%;
 }
-.nav-left li {
-    height: 100px;
-    line-height: 100px;
-    padding-left: 55px;
+.nav ul li {
 
-
-
-    
+    float: left;
+    padding: 50px;
+    flex-wrap: nowrap;
 }
-.nav-left li a{
-    color: #fff;
-}
-.nav-left li:hover {
+.nav ul li:hover {
     background-color: #469ad9;
 }
-.nav-left #cj p  {
-    display: none;
+.nav ul li a {
+    color: #FFF;
+    display: flex;
+    flex: 0 1;
 }
-.nav-left #grcj:target {
-    display: block;
-}
-/* 这个是上面那个小喇叭哪行文字的 */
-.nav {
-   font-size: 16px;
-   font-family: 'Courier New', Courier, monospace;
-   color: #333;
-   display: inline-block;
-}
-/* 中间背景图 */
-.imgsback {
-   background: url(../img/唯美风景2.jpg ) no-repeat;
-   height: 450px;
-   background-size: 100%;
-}
-.grtx img {
-   background: url(../img/user/个人头像照.jpg) no-repeat;
-   width: 10%;
-   position: absolute;
-   top: 300px;
-   margin: auto;
-   left: 390px;
-   border-radius: 100%;
-   opacity: 0.8;
-}
-/* 个人头像下面的文字 话语 */
-.grtx span {
-   position: absolute;
-   top: 400px;
-   margin: auto;
-   left: 250px;
-   border-radius: 100%;
-   opacity: 0.8;
-   font-size: 20px;
-   font-family: 'Courier New', Courier, monospace;
-}
-/* 中间的内容文字介绍 */
-.nr {
-   display: block;
-   background-color: #fff;
-   height: 1000px;
-   margin-top: 15px;
-   padding-top: 50PX;
-   padding-left: 50px;
-   font-size: 20px;
-   font-family: 'Courier New', Courier, monospace;
-}
-
-/* 主内容的右边 */
-.right  {
-
-}
-.right form {
-
-}
-.right form input{
-   background-color: #ccc;
-   border-radius: 20px;
-   opacity: 0.8;
-   padding-left: 15px;
-}
-/* 右侧个人头像照样式 */
-.right .main-right-tx {
-    /*  style="width: 100px;height: 100px;border-radius: 100%; opacity: 0.8;position: absolute;left: 100px;top: 80px;" */
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+.dropdown {
+    width: 100%;
+    height: 80px;
+    padding-top:20px;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(116, 110, 110) ;   
     opacity: 0.8;
-    position: absolute;
-    left: 100px;
-    top: 80px;
+    font-size: 25px;
 }
-/* 头像下面的文字 */
-.right .wenzigr-right {
-    /*  style="background-color: #fff;height: 100px;text-align: center;font-size: 18px;font-family: 'Courier New', Courier, monospace;
-    padding-top: 55px;color: #ccc;" */
-    background-color: #fff;
-    height: 100px;
-    text-align: center;
-    font-size: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 55px;
-    color: #ccc;
+.dropdown a,li {
+    color: #FFF;
 }
-/* 热门推荐-总 */
-.rm {
-   margin-top: 55px;
-   border: 1px solid #ccc;
-   /* background-color: #469ad9; */
+.dropdown #dLabel span:hover  {
+    color: #fff;
+    text-decoration: none !important;
+}
+.dropdown ul li {
+    background-color: rgb(99, 98, 96); 
+    opacity: 0.5;
+}
+#li-767  {
+    float: right;
+    padding-right: 30px;
+    padding: 10px;
+}
+#li-767 span a {
+    font-size: 16px;
+}
 
-}
-/* 热门推荐-旁边的文字 */
-.rm .rmtuij {
-    /*  style="font-size: 18px;font-family: 'Courier New', Courier, monospace;border-left: 1px solid #ccc;padding-left: 15px;"> */
+.dropdown ul li a {
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    border-left: 1px solid #ccc;
     color: #fff;
-    cursor: pointer;
+
 }
-.rm .rmico {
-    /* style="width: 50px;margin: 0 auto;padding-left: 15px;" */
-    width: 50px;
-    margin: 0 auto;
+.dropdown-menu ul li:hover{
+    background-color: #469ad9;
+}
+/* .header_top_nr {
+    position: relative;
+}
+.header_top_nr ul {
+    position: absolute;
+    background-color: white !important;
+    opacity: 0.5;
+    right: 15px;
+}
+.header_top_nr ul li {
+    
+} */
+.header_top_nav {
+    font-size: 16px;
+    float: right;
+    padding: 15px;
+}
+.nav
+.header_top_nav span a  {
     padding-left: 15px;
-    color: #fff;
 }
-.rm ul li {
-    /* background-color: rgb(83, 83, 83); */
+/* top - header -Nav -----stop*/
+/* tnv - lpt -----start*/
+@media screen  and (min-width:992px){
+    .nr {
+        margin-top: 121px;
+    }
 }
-.rm ul li span {
-    color: #ff0000  ;
+.nr img{
+    
+    width: 1800px;
+    height: 10px;
+    margin: auto;
+    
+    
 }
-.rm ul li a {
-    color: rgb(101, 124, 223);
-    font-size: 12px;
-}
-.rm ul li:hover{
-   background-color: #9fbed6     ;
-
-}
-/* foot */
-footer {
-   width: 100%;
-   height: 80px;
-   background-color: rgb(83, 83, 83);
-   color: #fff;
-   margin-top: 15PX;
-
-}
-footer p a {
-   color: #fff;
-   text-align: center;
-   padding-left: 15px;
-}
-footer p {
-
-   text-align: center;
-
-
-}
-#hui-top {
-    position:fixed;
-    right: 300px;
-    bottom: 100px;
-
-}
-
