@@ -4,152 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <script src="./js/index.js"></script>
-    <script src="./js/indexziji.js"></script>
+    <link rel="stylesheet" href="./bootstrap/fonts/glyphicons-halflings-regular.woff">
+    <link rel="stylesheet icon" href="./img/励志汽车.png">
+    <script src="./jquery/jquery-1.12.4.min.js"></script>
     <script src="./jquery/jquery-1.12.4.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <title>欢迎来到我的博客网</title>
+    <script src="./js/index.js"></script>
+    <title>郑国富的博客园俱乐部</title>
     <style>
-
+        body {background-color: #f5f5f5;height: 1280px; }
     </style>
 </head>
 <body>
-    <div id="header-top-huiqu"></div>
-    <!-- nav-left 菜单导航栏 -->
-    <div class="header-top">
-        <div id="zan" style="padding-left: 300px;opacity: 0.5;background-color: #333;" onclick="alert('感谢支持')"><a href=""><img src="../img/top-header-赞.PNG" alt=""></a></div>
-        <div id="zan" style="padding-left: 30px;opacity: 0.5;background-color: #333;" onclick="alert('感谢支持')"><a href=""><img src="../img/top-header-赞.PNG" alt=""></a></div>
-        <div id="zan" style="padding-left: 30px;opacity: 0.5;background-color: #333;" onclick="alert('感谢支持')"><a href=""><img src="../img/top-header-赞.PNG" alt=""></a></div>
-        <div id="zan" style="padding-left: 30px;opacity: 0.5;background-color: #333;" onclick="alert('感谢支持')"><a href=""><img src="../img/top-header-赞.PNG" alt=""></a></div>
-        <div id="zan" style="padding-left: 30px;opacity: 0.5;background-color: #333;" onclick="alert('感谢支持')"><a href=""><img src="../img/top-header-赞.PNG" alt=""></a></div>
-
-    </div>
-    <div class="nav-left col-md-3">
-        <ul>
-            <li><a href="./index-main-right.html" target="main" class="glyphicon glyphicon-education"><a href="#gr">个人简介</a></a>
-                
-            </li>
-            <li><a href="./成就.html" target="main" class="glyphicon glyphicon-education" onclick="loadDoc()">个人成就</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">项目经验</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">个人资源分享</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">给我留言</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">精美文章</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">作品展示</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">快捷导航</a>
-                
-            </li>
-            <li><a href="#" target="main" class="glyphicon glyphicon-education">站长经验</a>
-                
-            </li>
-
-        </ul>
-    </div>
-    <div class="container">
-        
-        <div class="row">
-
-        </div>
-        <!-- main-secetion -->
-        <div class="row">
-            <header class="col-md-9">
-                <div style="background-color: #fff;">
-                    <!-- 小喇叭 -->
-                    <span class="glyphicon glyphicon-bullhorn"></span>
-                    <div class="nav " style="margin-bottom: 15px;">欢迎来到我的博客站点，在这我会分享一些开发方面的知识经验和心得等!</div>
-                    <!-- 中间背景图 -->
-                    <div class="imgsback"></div>    
-                    <div class="grtx"><img src="./img/user/个人头像照.jpg" alt=""><span>人之所以痛苦，在于追求错误的东西。---郑国富 <br>  
-                    <a href="#gr" style="text-align: center;padding-left: 150px;padding-top: 15PX;"> 关于作者</a>  </span></div>
-                    
+    <div class="d">
+        <div class="ntk">
+                    <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        本站简介
+                    </h4>
                 </div>
-                <!-- <hr> -->
-                    <!-- 下面文字 -->
-                <div class="nr" id="gr" name >
-                    <p>姓名：郑国富</p>
-                    <p>性别：男</p>
-                    <p>民族：汗</p>
-                    <p>个人简介：热爱开发，热爱生活，也爱旅游也爱交友！ 如果你也喜欢我，或者想加入我们一起学习知识，或者合作：
-                        欢迎加我微信：13682353186(微信同号)，qq：2364976018  当然你也可以在网站后台给我留言，虽然很忙，
-                        但看到我会第一时间回复的。
-                    </p>
-                    <p>业余爱好：健身，拳击，听音乐，旅游，......</p>
+                <div class="modal-body">
 
+                    站长：郑国富，网址：https://www.zgfbk.com
+                    <p>本站诞生时间：2022/2/20</p>
 
-                    <p style="padding-top: 15px;">
-                        个人历史：
-                    </p>
-                    <p style="padding-left: 45px;">2021年12月通过建站搭建了自己的博客</p>
-                    <p style="padding-left: 45px;">2022年xx月购买了域名www.zgfusbk.com</p>
-                    <p style="padding-left: 45px;">202年上大学，我现在是一名学生党</p>
-                    <p style="padding-left: 45px;">20年毕业，</p>
-                    <p style="padding-left: 45px;">202</p>
-
-                    <center style="font-weight: bold;">生活虐我千万遍，我仁待她如初恋！</center>
-                    <video src="./img/user/gerenlizhi.mp4" width="700px" height="400px" controls="controls">
-                        <source src="./img/user/gerenlizhi.mp4" type="mp4">
-                    </video>
                 </div>
+                <div class="modal-footer">
 
+                    <div id="thediv" align="left">
+                        本站会发布什么？<br>
+                            （1）先期发布互联网和IT领域的内容（尤其是互联网网赚的内容会先发，这方面内容好写，多写可以给网站提权），这部分内容也会发布到微信公众号、百家号、熊掌号、大鱼号、企鹅号、简书等平台上。<br>
+                            （2）过一段时间，可以分享一些读书笔记（可能会涉及不止一个领域），最好是用思维导图的形式分享。如果这方面的内容和IT和互联网相关的话，也会发到上面提到的平台，还有微博、Bilibili等。如果无关，则发布到微博、Bilibili和简书。<br>
+                            （3）等我的水准足够录制一些分享视频的话，也会同时分享到各大视频平台，包括今日头条。<br>
+                            （4）资源分享，这是我的博客，而不是资源分享网站，但我还是会在文章中放一些资源链接的。<br>
+                            （5）广告，不会把广告放在文章旁边影响体验的，而是专门准备一个目录，把推广链接放过去。<br>
+                            暂时就想这么多，剩下的以后再说，另外我会每天都在网站上更新点东西的。<br>
+                            <br>
 
-            </header>
-            <!-- main-right -->
-            <div class="right col-md-3">
-                <!-- form-right-top -->
-                <form action="">
-                    <input type="text" name="" id="" placeholder="搜索看">
-                    <button type="submit" style="width: 50px;"> <div class="glyphicon glyphicon-search"></div> </button>
-                </form>     
-
-                <div style="margin-top: 15px;">
-                    <span style="width: 200px;height: 100px;overflow: hidden;"><img src="./img/截图励志2.png" alt="" width="100%" height="100%"></span>
-                    <span><img src="./img/user/个人头像照.jpg" alt="" class="main-right-tx"></span> 
-                    <p class="wenzigr-right">既不向东也不向西，而是直奔内心！</p>
-                </div>
-                <!-- 热门推荐 -->
-                <div class="rm">
-                    <!-- 热门推荐以及图标 -->
-                    <div class="glyphicon glyphicon-list rmico" ></div><span class="rmtuij">热门推荐</span>
-                    <div style="font-size: 12px;padding-left: 0;border-top: 1px solid #ccc;background-color: #fff;">
-                        <ul style="list-style: none;">
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">小米12全面曝光，处理器... </a><span style="display:flexbox;">2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">网站建设的6大流程... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">响应式开发并没有你想的那么难... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">div+css快速布局... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">小白如何快速称为大神... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">设计就应该这么学... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">网络管理系统的搭建... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html"  style="padding-top: 15px;" class="glyphicon glyphicon-tags xw" >价值10万的前端教程他来了... </a><span>2021/11/27</span></li>
-                            <li><a href="https://search.bilibili.com/upuser?keyword=%E5%AD%A6%E4%B9%A0%E5%A4%A7%E6%9C%AC%E8%90%A5   " style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">学习资源分享... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">这是一个任性的网站学习教程... </a><span>2021/11/27</span></li>
-                            <li><a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html" style="padding-top: 15px;"  class="glyphicon glyphicon-tags xw">python就该这么学... </a><span>2021/11/27</span></li>
-                        </ul>
                     </div>
+                    <div class="modal-footer">
+                        如果觉得本站有什么需要加以改善的地方，请，留言反馈给我，我会努力改善，谢谢<br>
+                        
+                            <span style="float: left; font-size: 20px;">您的鼓励认可和支持就是对作者更新的最大动力</span><br><br> 
+                            <a href="./html/鼓励作者.html" target='black' ><p style="text-align: center; font-size: 25px;" onclick="alert('谢谢，我会努力更新资源，做到最好！');" >鼓励一下</p>  </a>
+                    </div>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn-n btn btn-default" 
+                            data-dismiss="modal" >确定
+                    </button>
                 </div>
             </div>
         </div>
+   </div>
+        </div>
+        <header>
+            <div class="nav hidden-xs hidden-sm">
+                <ul>
+                    <li><a href="#">站长简介</a></li>
+                    <li><a href="#">最新资源</a></li>
+                    <li><a href="#">快捷导航</a></li>
+                    <li><a href="#">给我留言</a></li>
+                    <li><a href="#">学习站点</a></li>
+                </ul>
+            </div>
+            <div class="dropdown visible-xs visible-sm" >
+                <a id="dLabel" data-target="#" href="http://example.com/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span>郑国富</span>
+                  <span class="caret"></span>
+                  <div class="header_top_nav">
+                    <span><a href="#">最新资源</a></span>
+                    <span><a href="#">最新资源</a></span>
+                    <span><a href="#">最新资源</a></span>
+                    <span><a href="#">最新资源</a></span>
+                </div>
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">个人简介</a></li>
+                    <li><a href="#">学习经历</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">站长经验</a></li>
+                    <li><a href="#">给我留言</a></li>
+                </ul>
 
+                
+            </div>
+
+
+
+        </header>
+        <div class="nr">
+         
+        </div>
+          <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
     </div>
-    <!-- 秒点 回到顶部-->
-    <div id="hui-top"><button type="button" class="btn btn-info"><a href="#header-top-huiqu"> 回到顶部</a></button></div>
-    <!-- foot -->
-    <footer  >
-        <p><a href="#">关于我们</a><a href="#">联系我们</a><a href="#">加入团队</a></p>
-        <p>2021 小钢炮开发，开发爱好者 ！</p>
-    </footer>
 </body>
 </html>
